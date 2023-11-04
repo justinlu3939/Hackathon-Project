@@ -1,0 +1,14 @@
+fetch('/path/to/your/backend/file.txt')
+  .then(response => {
+    if (!response.ok) {
+      throw new Error('Network response was not ok');
+    }
+    return response.text();
+  })
+  .then(fileContents => {
+    // Use the contents of the backend file
+    console.log(fileContents);
+  })
+  .catch(error => {
+    console.error('There was a problem with the fetch operation:', error);
+  });
