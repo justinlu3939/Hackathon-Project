@@ -1,6 +1,6 @@
 import openai
 
-api_key = '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'  # Replace with your actual API key
+api_key = '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'  # Replace with your actual API key
 
 model_engine = "text-davinci-003"
 prompt = 'Generate a mad lib.'
